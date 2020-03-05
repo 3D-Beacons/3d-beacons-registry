@@ -1,0 +1,1 @@
+# 3d-beacons-registry
