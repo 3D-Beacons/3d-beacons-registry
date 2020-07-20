@@ -2,7 +2,7 @@
     "providers": [
         {
             "providerId": "p1",
-            "providerName": "p1name",
+            "providerName": "p1 name",
             "providerDescription": "p1 desc",
             "providerUrl": "www.example.com",
             "baseServiceUrl": "www.example.com",
@@ -10,7 +10,7 @@
         },
         {
             "providerId": "p2",
-            "providerName": "p2name",
+            "providerName": "p2 name",
             "providerDescription": "p2 desc",
             "providerUrl": "www.example.com",
             "baseServiceUrl": "www.example.com",
