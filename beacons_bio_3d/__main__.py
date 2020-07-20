@@ -14,7 +14,6 @@
 # under the License.
 
 import os
-import sys
 import json
 import argparse
 from beacons_bio_3d.utils import JSONUtils, DjangoUtils
@@ -29,10 +28,11 @@ RES_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__
 DEFAULT_SCHEMA_JSON = f"{RES_PATH}/schema.json"
 DEFAULT_REGISTRY_JSON = f"{RES_PATH}/registry.json"
 
+
 def main():
     """ This is the application entry point
     """
-    
+
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawTextHelpFormatter)
     sub_parsers = parser.add_subparsers(dest='subparser_name', help="Available sub-commands")
@@ -46,7 +46,10 @@ def main():
     model_gen_parser = sub_parsers.add_parser("model_generate", help="Generates model JSON from registry JSON.")
     model_gen_parser.add_argument("--registry_json", help="Path to registry JSON to be converted", required=True)
     model_gen_parser.add_argument("--model_json", help="Path to output model JSON", required=True)
-    model_gen_parser.add_argument("--django_app", help="The name of Django app, this will be used to define package for model")
+    model_gen_parser.add_argument(
+        "--django_app",
+        help="The name of Django app, this will be used to define package for model",
+        default="core")
 
     args = parser.parse_args()
 
@@ -60,6 +63,7 @@ def main():
                 json.dump(gen_model, model_json_handle)
 
         print(f"Model JSON generated to {args.model_json}")
+
 
 if __name__ == "__main__":
     main()

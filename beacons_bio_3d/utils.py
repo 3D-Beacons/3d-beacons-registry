@@ -1,8 +1,8 @@
-from logging import debug
 import os
 import json
 import jsonschema
 from jsonschema.exceptions import ValidationError
+
 
 class DjangoUtils:
     """ This is the utils class for Django
@@ -11,8 +11,6 @@ class DjangoUtils:
     def generate_fixture_json(input_registry_json, django_app="core"):
         registry = json.load(open(input_registry_json))
         model = []
-        provider_dict = {}
-        service_dict = {}
 
         for provider in registry["providers"]:
             model.append(
@@ -27,18 +25,19 @@ class DjangoUtils:
                     }
                 }
             )
-        
+
         for service in registry["services"]:
             model.append({
                 "model": f"{django_app}.Service",
                 "fields": {
-                    "service_type": service["serviceType"], 
+                    "service_type": service["serviceType"],
                     "provider": service["provider"],
                     "access_point": service["accessPoint"]
                 }
             })
 
         return model
+
 
 class JSONUtils:
     """ This is the utils class for JSON
@@ -67,7 +66,7 @@ class JSONUtils:
             jsonschema.validate(instance, schema=schema)
         except ValidationError as e:
             raise e
-        
+
         # validate if provider field in services is valid
         dict_provider = dict()
 
@@ -83,7 +82,7 @@ class JSONUtils:
 
         if unmatched_providers:
             raise InvalidProviderException(unmatched_providers)
-        
+
         print("Validation successful")
         return True
 
@@ -98,4 +97,3 @@ class InvalidProviderException(Exception):
     def __init__(self, providers):
         self.providers = providers
         super().__init__(f"Invalid providers: {self.providers}")
-
