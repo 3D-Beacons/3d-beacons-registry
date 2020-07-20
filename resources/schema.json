@@ -1,0 +1,135 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "https://json-schema.org/draft/2019-09/schema",
+    "type": "object",
+    "title": "The registry schema",
+    "description": "The JSON schema for registry document.",
+    "required": [
+        "providers",
+        "services"
+    ],
+    "properties": {
+        "providers": {
+            "$id": "#/properties/providers",
+            "type": "array",
+            "title": "Providers list",
+            "description": "A list of providers objects",
+            "items": [
+                {
+                    "type": "object",
+                    "required": [
+                        "providerId",
+                        "providerName",
+                        "providerDescription",
+                        "providerUrl",
+                        "baseServiceUrl",
+                        "providerLogo"
+                    ],
+                    "properties": {
+                        "providerId": {
+                            "$id": "#/properties/providers/properties/providerId",
+                            "type": "string",
+                            "title": "Provider ID",
+                            "description": "A unique id for provider",
+                            "examples": [
+                                "pdbe"
+                            ]
+                        },
+                        "providerName": {
+                            "$id": "#/properties/providers/properties/providerName",
+                            "type": "string",
+                            "title": "Provider name",
+                            "description": "A name for provider",
+                            "examples": [
+                                "Protein Databank in Europe"
+                            ]
+                        },
+                        "providerDescription": {
+                            "$id": "#/properties/providers/properties/providerDescription",
+                            "type": "string",
+                            "title": "Provider description",
+                            "description": "A description for provider",
+                            "examples": [
+                                "PDBe is the European resource for the collection, organisation and dissemination of data on biological macromolecular structures."
+                            ]
+                        },
+                        "providerUrl": {
+                            "$id": "#/properties/providers/properties/providerUrl",
+                            "type": "string",
+                            "title": "Provider url",
+                            "description": "A url to the provider website",
+                            "examples": [
+                                "https://www.ebi.ac.uk/pdbe/"
+                            ]
+                        },
+                        "baseServiceUrl": {
+                            "$id": "#/properties/providers/properties/baseServiceUrl",
+                            "type": "string",
+                            "title": "Base service url",
+                            "description": "A base url for the service of each provider",
+                            "examples": [
+                                "https://www.ebi.ac.uk/pdbe/beacons/"
+                            ],
+                            "default": ""
+                        },
+                        "providerLogo": {
+                            "$id": "#/properties/providers/properties/providerLogo",
+                            "type": "string",
+                            "title": "Provider logo URL",
+                            "description": "A url to the provider logo",
+                            "examples": [
+                                "https://www.ebi.ac.uk/pdbe/docs_dev/logos/images/RGB/PDBe-letterhead-white-RGB_2013.png"
+                            ],
+                            "default": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "services": {
+            "$id": "#/properties/services",
+            "type": "array",
+            "title": "Services list",
+            "description": "A list of services objects.",
+            "items": [
+                {
+                    "type": "object",
+                    "required": [
+                        "serviceType",
+                        "provider",
+                        "accessPoint"
+                    ],
+                    "properties": {
+                        "serviceType": {
+                            "$id": "#/properties/services/properties/serviceType",
+                            "type": "string",
+                            "title": "Service type",
+                            "description": "A type of service.",
+                            "examples": [
+                                "uniprot"
+                            ]
+                        },
+                        "provider": {
+                            "$id": "#/properties/services/properties/provider",
+                            "type": "string",
+                            "title": "Service provider",
+                            "description": "The provider who serves the service.",
+                            "examples": [
+                                "pdbe"
+                            ]
+                        },
+                        "accessPoint": {
+                            "$id": "#/properties/services/properties/accessPoint",
+                            "type": "string",
+                            "title": "Service access point",
+                            "description": "An access point to the service.",
+                            "examples": [
+                                "uniprot/structures"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
