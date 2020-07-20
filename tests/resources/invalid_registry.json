@@ -1,0 +1,21 @@
+{
+    "providers": [
+        {
+            "providerId": "a"
+        },
+        {
+            "providerId": "b",
+            "providerName": "b"
+        }
+    ],
+    "services": [
+        {
+            "serviceType": "a",
+            "provider": "a"
+        },
+        {
+            "serviceType": "b",
+            "provider": "b"
+        }
+    ]
+}

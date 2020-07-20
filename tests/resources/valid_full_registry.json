@@ -1,0 +1,32 @@
+{
+    "providers": [
+        {
+            "providerId": "p1",
+            "providerName": "p1name",
+            "providerDescription": "p1 desc",
+            "providerUrl": "www.example.com",
+            "baseServiceUrl": "www.example.com",
+            "providerLogo": "www.example.com/example.jpg"
+        },
+        {
+            "providerId": "p2",
+            "providerName": "p2name",
+            "providerDescription": "p2 desc",
+            "providerUrl": "www.example.com",
+            "baseServiceUrl": "www.example.com",
+            "providerLogo": "www.example.com/example.jpg"
+        }
+    ],
+    "services": [
+        {
+            "serviceType": "s",
+            "provider": "p1",
+            "accessPoint": "s/accesspoint"
+        },
+        {
+            "serviceType": "s",
+            "provider": "p2",
+            "accessPoint": "s/accesspoint"
+        }
+    ]
+}
