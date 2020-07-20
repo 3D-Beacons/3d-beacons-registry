@@ -22,6 +22,7 @@ analyze:
 	flake8 --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics --exclude=migrations ./beacons_bio_3d
 
 test:
+	pip install pytest-cov pytest-xdist
 	pytest --cov-config=.coveragerc --cov-report=html --cov=beacons_bio_3d .
 
 dist: clean
