@@ -33,57 +33,66 @@
             "providerLogo": "https://www.ebi.ac.uk/pdbe/pdbe-kb/static/img/PDBe-KB-logo-white.png"
         }
     ],
-    "services": {
-        "uniprot": {
-            "providers": {
-                "swiss-model": {
-                    
-                },
-                "genome-3d": {
-                    
-                },
-                "pdbe": {
-                    
-                },
-                "pdbe-kb": {
-                    
-                }
-            },
+    "services": [
+        {
+            "serviceType": "uniprot",
+            "provider": "swiss-model",
             "accessPoint": "uniprot/structures"
         },
-        "sequence": {
-            "providers": {
-                "swiss-model": {
-                    
-                },
-                "genome-3d": {
-                    
-                },
-                "pdbe": {
-                    
-                },
-                "pdbe-kb": {
-                    
-                }
-            },
+        {
+            "serviceType": "uniprot",
+            "provider": "genome-3d",
+            "accessPoint": "uniprot/structures"
+        },
+        {
+            "serviceType": "uniprot",
+            "provider": "pdbe",
+            "accessPoint": "uniprot/structures"
+        },
+        {
+            "serviceType": "uniprot",
+            "provider": "pdbe-kb",
+            "accessPoint": "uniprot/structures"
+        },
+        {
+            "serviceType": "sequence",
+            "provider": "swiss-model",
             "accessPoint": "sequence/structures"
         },
-        "taxonomy": {
-            "providers": {
-                "swiss-model": {
-                    
-                },
-                "genome-3d": {
-                    
-                },
-                "pdbe": {
-                    
-                },
-                "pdbe-kb": {
-                    
-                }
-            },
+        {
+            "serviceType": "sequence",
+            "provider": "genome-3d",
+            "accessPoint": "sequence/structures"
+        },
+        {
+            "serviceType": "sequence",
+            "provider": "pdbe",
+            "accessPoint": "sequence/structures"
+        },
+        {
+            "serviceType": "sequence",
+            "provider": "pdbe-kb",
+            "accessPoint": "sequence/structures"
+        },
+        {
+            "serviceType": "taxonomy",
+            "provider": "swiss-model",
+            "accessPoint": "taxonomy/structures"
+        },
+        {
+            "serviceType": "taxonomy",
+            "provider": "genome-3d",
+            "accessPoint": "taxonomy/structures"
+        },
+        {
+            "serviceType": "taxonomy",
+            "provider": "pdbe",
+            "accessPoint": "taxonomy/structures"
+        },
+        {
+            "serviceType": "taxonomy",
+            "provider": "pdbe-kb",
             "accessPoint": "taxonomy/structures"
         }
-    }
+    ]
 }
