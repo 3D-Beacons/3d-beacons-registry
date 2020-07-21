@@ -35,6 +35,3 @@ license: dist
 
 dev_deps:
 	pip install six jsonschema pytest-cov pytest-xdist flake8
-
-gen_model: dev_deps
-	python -m beacons_bio_3d model_generate --registry_json resources/registry.json --model_json registry.json --django_app core
