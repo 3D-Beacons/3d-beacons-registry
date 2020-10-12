@@ -1,15 +1,15 @@
 {
     "providers": [
         {
-            "providerId": "swiss-model",
+            "providerId": "swissmodel",
             "providerName": "SWISS-MODEL",
             "providerDescription": "SWISS-MODEL is a fully automated protein structure homology-modelling server, accessible via the ExPASy web server, or from the program DeepView (Swiss Pdb-Viewer). The purpose of this server is to make protein modelling accessible to all life science researchers worldwide.",
             "providerUrl": "https://swissmodel.expasy.org/",
-            "baseServiceUrl": "https://swissmodel.expasy.org/beacons/",
+            "baseServiceUrl": "https://beta.swissmodel.expasy.org/3d-beacons/",
             "providerLogo": "https://swissmodel.expasy.org"
         },
         {
-            "providerId": "genome-3d",
+            "providerId": "genome3d",
             "providerName": "Genome-3D",
             "providerDescription": "Genome3D provides consensus structural annotations and 3D models for sequences from model organisms, including human.",
             "providerUrl": "http://genome3d.eu/",
@@ -17,81 +17,58 @@
             "providerLogo": "http://genome3d.eu/"
         },
         {
-            "providerId": "pdbe",
-            "providerName": "Protein Databank in Europe",
-            "providerDescription": "PDBe is the European resource for the collection, organisation and dissemination of data on biological macromolecular structures.",
-            "providerUrl": "https://www.ebi.ac.uk/pdbe/",
-            "baseServiceUrl": "https://www.ebi.ac.uk/pdbe/beacons/",
-            "providerLogo": "https://www.ebi.ac.uk/pdbe/docs_dev/logos/images/RGB/PDBe-letterhead-white-RGB_2013.png"
-        },
-        {
-            "providerId": "pdbe-kb",
+            "providerId": "pdb",
             "providerName": "Protein Data Bank in Europe - Knowledge Base",
             "providerDescription": "PDBe-KB (Protein Data Bank in Europe - Knowledge Base) is a community-driven resource managed by the PDBe team, collating functional annotations and predictions for structure data in the PDB archive. PDBe-KB is a collaborative effort between PDBe and a diverse group of bioinformatics resources and research teams.",
             "providerUrl": "https://www.ebi.ac.uk/pdbe/pdbe-kb",
-            "baseServiceUrl": "https://www.ebi.ac.uk/pdbe/pdbe-kb/beacons/",
+            "baseServiceUrl": "https://wwwdev.ebi.ac.uk/pdbe-k8s/pdbe-kb/graph-api/beacons/",
             "providerLogo": "https://www.ebi.ac.uk/pdbe/pdbe-kb/static/img/PDBe-KB-logo-white.png"
         }
     ],
     "services": [
         {
             "serviceType": "uniprot",
-            "provider": "swiss-model",
+            "provider": "swissmodel",
+            "accessPoint": "uniprot/"
+        },
+        {
+            "serviceType": "uniprot",
+            "provider": "genome3d",
             "accessPoint": "uniprot/structures"
         },
         {
             "serviceType": "uniprot",
-            "provider": "genome-3d",
-            "accessPoint": "uniprot/structures"
-        },
-        {
-            "serviceType": "uniprot",
-            "provider": "pdbe",
-            "accessPoint": "uniprot/structures"
-        },
-        {
-            "serviceType": "uniprot",
-            "provider": "pdbe-kb",
-            "accessPoint": "uniprot/structures"
+            "provider": "pdb",
+            "accessPoint": "uniprot/"
         },
         {
             "serviceType": "sequence",
-            "provider": "swiss-model",
+            "provider": "swissmodel",
             "accessPoint": "sequence/structures"
         },
         {
             "serviceType": "sequence",
-            "provider": "genome-3d",
+            "provider": "genome3d",
             "accessPoint": "sequence/structures"
         },
         {
             "serviceType": "sequence",
-            "provider": "pdbe",
-            "accessPoint": "sequence/structures"
-        },
-        {
-            "serviceType": "sequence",
-            "provider": "pdbe-kb",
+            "provider": "pdb",
             "accessPoint": "sequence/structures"
         },
         {
             "serviceType": "taxonomy",
-            "provider": "swiss-model",
+            "provider": "swissmodel",
             "accessPoint": "taxonomy/structures"
         },
         {
             "serviceType": "taxonomy",
-            "provider": "genome-3d",
+            "provider": "genome3d",
             "accessPoint": "taxonomy/structures"
         },
         {
             "serviceType": "taxonomy",
-            "provider": "pdbe",
-            "accessPoint": "taxonomy/structures"
-        },
-        {
-            "serviceType": "taxonomy",
-            "provider": "pdbe-kb",
+            "provider": "pdb",
             "accessPoint": "taxonomy/structures"
         }
     ]
