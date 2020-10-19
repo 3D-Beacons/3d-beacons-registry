@@ -18,11 +18,11 @@
         },
         {
             "providerId": "pdb",
-            "providerName": "Protein Data Bank in Europe - Knowledge Base",
-            "providerDescription": "PDBe-KB (Protein Data Bank in Europe - Knowledge Base) is a community-driven resource managed by the PDBe team, collating functional annotations and predictions for structure data in the PDB archive. PDBe-KB is a collaborative effort between PDBe and a diverse group of bioinformatics resources and research teams.",
-            "providerUrl": "https://www.ebi.ac.uk/pdbe/pdbe-kb",
-            "baseServiceUrl": "https://wwwdev.ebi.ac.uk/pdbe-k8s/pdbe-kb/graph-api/beacons/",
-            "providerLogo": "https://www.ebi.ac.uk/pdbe/pdbe-kb/static/img/PDBe-KB-logo-white.png"
+            "providerName": "Protein Data Bank in Europe",
+            "providerDescription": "PDBe is the European resource for the collection, organisation and dissemination of data on biological macromolecular structures.",
+            "providerUrl": "https://www.ebi.ac.uk/pdbe/",
+            "baseServiceUrl": "https://wwwdev.ebi.ac.uk/pdbe-k8s/pdbe/aggregated-api/beacons/",
+            "providerLogo": "https://www.ebi.ac.uk/pdbe/static/images/logos/PDBe/logo.png"
         }
     ],
     "services": [
