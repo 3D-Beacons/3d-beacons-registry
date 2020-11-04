@@ -21,7 +21,7 @@
             "providerName": "Protein Data Bank in Europe",
             "providerDescription": "PDBe is the European resource for the collection, organisation and dissemination of data on biological macromolecular structures.",
             "providerUrl": "https://www.ebi.ac.uk/pdbe/",
-            "baseServiceUrl": "https://wwwdev.ebi.ac.uk/pdbe-k8s/pdbe/aggregated-api/beacons/",
+            "baseServiceUrl": "https://wwwdev.ebi.ac.uk/pdbe/aggregated-api/beacons/",
             "providerLogo": "https://www.ebi.ac.uk/pdbe/static/images/logos/PDBe/logo.png"
         }
     ],
