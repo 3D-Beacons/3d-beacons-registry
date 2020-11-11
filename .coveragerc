@@ -1,0 +1,8 @@
+[run]
+
+omit = 
+    resources/*
+    beacons_bio_3d/__main__.py
+
+[report]
+show_missing = True

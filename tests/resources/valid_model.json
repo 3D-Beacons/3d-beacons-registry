@@ -1,0 +1,38 @@
+[
+    {
+        "model": "core.Provider",
+        "pk": "p1",
+        "fields": {
+            "name": "p1 name",
+            "description": "p1 desc",
+            "url": "www.example.com",
+            "base_service_url": "www.example.com"
+        }
+    },
+    {
+        "model": "core.Provider",
+        "pk": "p2",
+        "fields": {
+            "name": "p2 name",
+            "description": "p2 desc",
+            "url": "www.example.com",
+            "base_service_url": "www.example.com"
+        }
+    },
+    {
+        "model": "core.Service",
+        "fields": {
+            "service_type": "s",
+            "provider": "p1",
+            "access_point": "s/accesspoint"
+        }
+    },
+    {
+        "model": "core.Service",
+        "fields": {
+            "service_type": "s",
+            "provider": "p2",
+            "access_point": "s/accesspoint"
+        }
+    }
+]

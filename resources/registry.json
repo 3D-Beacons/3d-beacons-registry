@@ -1,0 +1,58 @@
+{
+    "providers": [
+        {
+            "providerId": "swissmodel",
+            "providerName": "SWISS-MODEL",
+            "providerDescription": "SWISS-MODEL is a fully automated protein structure homology-modelling server, accessible via the ExPASy web server, or from the program DeepView (Swiss Pdb-Viewer). The purpose of this server is to make protein modelling accessible to all life science researchers worldwide.",
+            "providerUrl": "https://swissmodel.expasy.org/",
+            "baseServiceUrl": "https://beta.swissmodel.expasy.org/3d-beacons/",
+            "providerLogo": "https://swissmodel.expasy.org"
+        },
+        {
+            "providerId": "genome3d",
+            "providerName": "Genome-3D",
+            "providerDescription": "Genome3D provides consensus structural annotations and 3D models for sequences from model organisms, including human.",
+            "providerUrl": "http://genome3d.eu/",
+            "baseServiceUrl": "http://genome3d.eu/beacons/",
+            "providerLogo": "http://genome3d.eu/"
+        },
+        {
+            "providerId": "pdb",
+            "providerName": "Protein Data Bank in Europe",
+            "providerDescription": "PDBe is the European resource for the collection, organisation and dissemination of data on biological macromolecular structures.",
+            "providerUrl": "https://www.ebi.ac.uk/pdbe/",
+            "baseServiceUrl": "https://wwwdev.ebi.ac.uk/pdbe/aggregated-api/beacons/",
+            "providerLogo": "https://www.ebi.ac.uk/pdbe/static/images/logos/PDBe/logo.png"
+        },
+        {
+            "providerId": "ped",
+            "providerName": "Protein Ensemble Database",
+            "providerDescription": "The Protein Ensemble Database (PED) is an open access database for the deposition of structural ensembles, mainly intrinsically disordered proteins (IDPs).",
+            "providerUrl": "https://proteinensemble.org/",
+            "baseServiceUrl": "https://proteinensemble.org/api/3d-beacons/",
+            "providerLogo": "https://proteinensemble.org/assets/PED_logo.svg"
+        }
+    ],
+    "services": [
+        {
+            "serviceType": "uniprot",
+            "provider": "swissmodel",
+            "accessPoint": "uniprot/"
+        },
+        {
+            "serviceType": "uniprot",
+            "provider": "genome3d",
+            "accessPoint": "uniprot/structures"
+        },
+        {
+            "serviceType": "uniprot",
+            "provider": "pdb",
+            "accessPoint": "uniprot/"
+        },
+        {
+            "serviceType": "uniprot",
+            "provider": "ped",
+            "accessPoint": ""
+        }
+    ]
+}

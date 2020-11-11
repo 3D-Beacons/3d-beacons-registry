@@ -1,0 +1,57 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "https://json-schema.org/draft/2019-09/schema",
+    "type": "object",
+    "required": [
+        "providers",
+        "services"
+    ],
+    "properties": {
+        "providers": {
+            "$id": "#/properties/providers",
+            "type": "array",
+            "items": [
+                {
+                    "type": "object",
+                    "required": [
+                        "providerId",
+                        "providerName"
+                    ],
+                    "properties": {
+                        "providerId": {
+                            "$id": "#/properties/providers/properties/providerId",
+                            "type": "string"
+                        },
+                        "providerName": {
+                            "$id": "#/properties/providers/properties/providerName",
+                            "type": "string"
+                        }
+                    }
+                }
+            ]
+        },
+        "services": {
+            "$id": "#/properties/services",
+            "type": "array",
+            "items": [
+                {
+                    "type": "object",
+                    "required": [
+                        "serviceType",
+                        "provider"
+                    ],
+                    "properties": {
+                        "serviceType": {
+                            "$id": "#/properties/services/properties/serviceType",
+                            "type": "string"
+                        },
+                        "provider": {
+                            "$id": "#/properties/services/properties/provider",
+                            "type": "string"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
