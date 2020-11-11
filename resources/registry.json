@@ -23,6 +23,14 @@
             "providerUrl": "https://www.ebi.ac.uk/pdbe/",
             "baseServiceUrl": "https://wwwdev.ebi.ac.uk/pdbe/aggregated-api/beacons/",
             "providerLogo": "https://www.ebi.ac.uk/pdbe/static/images/logos/PDBe/logo.png"
+        },
+        {
+            "providerId": "ped",
+            "providerName": "Protein Ensemble Database",
+            "providerDescription": "The Protein Ensemble Database (PED) is an open access database for the deposition of structural ensembles, mainly intrinsically disordered proteins (IDPs).",
+            "providerUrl": "https://proteinensemble.org/",
+            "baseServiceUrl": "https://proteinensemble.org/api/3d-beacons/",
+            "providerLogo": "https://proteinensemble.org/assets/PED_logo.svg"
         }
     ],
     "services": [
@@ -42,34 +50,9 @@
             "accessPoint": "uniprot/"
         },
         {
-            "serviceType": "sequence",
-            "provider": "swissmodel",
-            "accessPoint": "sequence/structures"
-        },
-        {
-            "serviceType": "sequence",
-            "provider": "genome3d",
-            "accessPoint": "sequence/structures"
-        },
-        {
-            "serviceType": "sequence",
-            "provider": "pdb",
-            "accessPoint": "sequence/structures"
-        },
-        {
-            "serviceType": "taxonomy",
-            "provider": "swissmodel",
-            "accessPoint": "taxonomy/structures"
-        },
-        {
-            "serviceType": "taxonomy",
-            "provider": "genome3d",
-            "accessPoint": "taxonomy/structures"
-        },
-        {
-            "serviceType": "taxonomy",
-            "provider": "pdb",
-            "accessPoint": "taxonomy/structures"
+            "serviceType": "uniprot",
+            "provider": "ped",
+            "accessPoint": ""
         }
     ]
 }
