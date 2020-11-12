@@ -5,9 +5,9 @@
 
 ![Image](https://raw.githubusercontent.com/3D-Beacons/3d-beacons-documentation/main/assets/3d-beacons-summary.png)
 
-Schematical overview of the 3D-Beacons infrastructure
+**Schematical overview of the 3D-Beacons infrastructure**
 
-3D-Beacons consists of a Registry, a Hub/Integrator and Beacons/Hosts. The Registry is used by the Hub to lookup which API endpoints are supported by the various Beacons/Hosts. The Beacons/Hosts provide data following the 3D-Beacons data specifications ([Current version: 0.3.1](https://app.swaggerhub.com/apis/3dbeacons/3D-Beacons/0.3.1))
+3D-Beacons consists of a Registry, a Hub and Beacons who host Clients. The Registry is used by the Hub to look up which API endpoints are supported by the various Beacons. The Beacons provide data according to the 3D-Beacons data specifications ([Current version: 0.3.1](https://app.swaggerhub.com/apis/3dbeacons/3D-Beacons/0.3.1)). The Hub collates the data from the Beacons and expose it via Hub API endpoints.
 
 ### Current 3D-Beacons
 - [FoldX](http://foldxsuite.crg.eu/)
@@ -22,6 +22,19 @@ The 3D-Beacons Registry records meta-information about all the contributing part
 
 The Registry is implemented as a JSON object that complies with the schema specification, which is also included in this repository.
 
+## Installation
+
+[TODO]
+
+## Usage
+
+[TODO]
+
 ## Contributors
-- Mihaly Varadi [mvaradi](https://github.com/mvaradi)
-- Sreenath Nair [sreenathnair](https://github.com/sreenathnair)
+- Mihaly Varadi - _Initial work_ - [mvaradi](https://github.com/mvaradi)
+- Sreenath Nair - _Initial work_ - [sreenathnair](https://github.com/sreenathnair)
+
+See also the list of [contributors](https://github.com/3D-Beacons/3d-beacons-registry/contributors) who participated in this project.
+
+### How to contribute
+This repository is open to contributions. Please fork the repository and send pull requests.
