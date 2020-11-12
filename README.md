@@ -31,8 +31,8 @@ The Registry is implemented as a JSON object that complies with the schema speci
 [TODO]
 
 ## Contributors
-- Mihaly Varadi - _Initial work_ - [mvaradi](https://github.com/mvaradi)
 - Sreenath Nair - _Initial work_ - [sreenathnair](https://github.com/sreenathnair)
+- Mihaly Varadi - _Initial work_ - [mvaradi](https://github.com/mvaradi)
 
 See also the list of [contributors](https://github.com/3D-Beacons/3d-beacons-registry/contributors) who participated in this project.
 
