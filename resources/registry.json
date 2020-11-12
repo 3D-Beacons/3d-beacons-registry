@@ -17,7 +17,7 @@
             "providerLogo": "http://genome3d.eu/"
         },
         {
-            "providerId": "pdb",
+            "providerId": "pdbe",
             "providerName": "Protein Data Bank in Europe",
             "providerDescription": "PDBe is the European resource for the collection, organisation and dissemination of data on biological macromolecular structures.",
             "providerUrl": "https://www.ebi.ac.uk/pdbe/",
@@ -53,6 +53,21 @@
             "serviceType": "uniprot",
             "provider": "ped",
             "accessPoint": ""
+        },
+        {
+            "serviceType": "summary",
+            "provider": "pdbe",
+            "accessPoint": "uniprot/summary/"
+        },
+        {
+            "serviceType": "summary",
+            "provider": "ped",
+            "accessPoint": "uniprot/summary/"
+        },
+        {
+            "serviceType": "summary",
+            "provider": "swissmodel",
+            "accessPoint": "uniprot/summary/"
         }
     ]
 }
