@@ -34,4 +34,4 @@ license: dist
 	python3 setup.py --license
 
 dev_deps:
-	pip install six jsonschema pytest-cov pytest-xdist flake8
+	pip install six jsonschema pytest-cov pytest-xdist flake8 wheel
