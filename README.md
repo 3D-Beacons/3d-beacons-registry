@@ -22,13 +22,47 @@ The 3D-Beacons Registry records meta-information about all the contributing part
 
 The Registry is implemented as a JSON object that complies with the schema specification, which is also included in this repository.
 
+These are available in `resources` folder in the repository. To add or change a registry entry, make the relevant changes in `resources/registry.json` which should comply with schema defined in `resources/schema.json`.
+
+There is also an installable Python package in this repository which provides utilities like schema validation. Please follow the installation section below for installing the Python package.
+
 ## Installation
 
-[TODO]
+### Prerequisites
+Below are the list of softwares/tools for the utilities to properly run in the environment.
+
+
+Python 3.7+
+
+**Note**
+
+Because [Python 2.7 supports ended January 1](https://pythonclock.org/), 2020, new projects should consider supporting Python 3 only, which is simpler than trying to support both. As a result, support for Python 2.7 in this project has been dropped.
+
+### Setup the environment
+Setup a Python virtual environment and install required packages.
+```
+$ python3 -m venv venv
+$ source venv/bin/activate
+```
+
+Now install the project dependencies.
+
+```
+(venv) $ make dev_deps
+```
+
+Install the package
+```
+(venv) $ pip install .
+```
 
 ## Usage
 
-[TODO]
+The installed package can be used to validate `registry.json` against the defined schema. Both the files are available in `resources` folder.
+
+```
+(venv) $ beacons_bio_3d validate_schema --schema_json resources/schema.json --registry_json resources/registry.json
+```
 
 ## Contributors
 - Sreenath Nair - _Initial work_ - [sreenathnair](https://github.com/sreenathnair)
