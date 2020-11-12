@@ -41,18 +41,8 @@
         },
         {
             "serviceType": "uniprot",
-            "provider": "genome3d",
-            "accessPoint": "uniprot/structures"
-        },
-        {
-            "serviceType": "uniprot",
-            "provider": "pdb",
+            "provider": "pdbe",
             "accessPoint": "uniprot/"
-        },
-        {
-            "serviceType": "uniprot",
-            "provider": "ped",
-            "accessPoint": ""
         },
         {
             "serviceType": "summary",
@@ -62,11 +52,6 @@
         {
             "serviceType": "summary",
             "provider": "ped",
-            "accessPoint": "uniprot/summary/"
-        },
-        {
-            "serviceType": "summary",
-            "provider": "swissmodel",
             "accessPoint": "uniprot/summary/"
         }
     ]
