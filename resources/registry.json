@@ -53,6 +53,11 @@
             "serviceType": "summary",
             "provider": "ped",
             "accessPoint": "uniprot/summary/"
+        },
+        {
+            "serviceType": "summary",
+            "provider": "swissmodel",
+            "accessPoint": "uniprot/summary/"
         }
     ]
 }
