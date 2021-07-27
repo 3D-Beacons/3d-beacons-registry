@@ -31,17 +31,20 @@
             "providerUrl": "https://proteinensemble.org/",
             "baseServiceUrl": "https://proteinensemble.org/api/3d-beacons/",
             "providerLogo": "https://proteinensemble.org/assets/PED_logo.svg"
+        },
+        {
+            "providerId": "alphafold",
+            "providerName": "AlphaFold Protein Structure Database",
+            "providerDescription": "AlphaFold is an AI system developed by DeepMind that predicts a protein’s 3D structure from its amino acid sequence. It regularly achieves accuracy competitive with experiment.",
+            "providerUrl": "https://alphafold.ebi.ac.uk/",
+            "baseServiceUrl": "https://alphafold.ebi.ac.uk/api/",
+            "providerLogo": "https://alphafold.ebi.ac.uk/assets/img/dm-logo.png"
         }
     ],
     "services": [
         {
             "serviceType": "uniprot",
             "provider": "swissmodel",
-            "accessPoint": "uniprot/"
-        },
-        {
-            "serviceType": "uniprot",
-            "provider": "pdbe",
             "accessPoint": "uniprot/"
         },
         {
@@ -57,6 +60,11 @@
         {
             "serviceType": "summary",
             "provider": "swissmodel",
+            "accessPoint": "uniprot/summary/"
+        },
+        {
+            "serviceType": "summary",
+            "provider": "alphafold",
             "accessPoint": "uniprot/summary/"
         }
     ]
