@@ -17,7 +17,7 @@
             "providerLogo": "http://genome3d.eu/"
         },
         {
-            "providerId": "pdb",
+            "providerId": "pdbe",
             "providerName": "Protein Data Bank in Europe",
             "providerDescription": "PDBe is the European resource for the collection, organisation and dissemination of data on biological macromolecular structures.",
             "providerUrl": "https://www.ebi.ac.uk/pdbe/",
@@ -31,6 +31,14 @@
             "providerUrl": "https://proteinensemble.org/",
             "baseServiceUrl": "https://proteinensemble.org/api/3d-beacons/",
             "providerLogo": "https://proteinensemble.org/assets/PED_logo.svg"
+        },
+        {
+            "providerId": "alphafold",
+            "providerName": "AlphaFold Protein Structure Database",
+            "providerDescription": "AlphaFold is an AI system developed by DeepMind that predicts a protein’s 3D structure from its amino acid sequence. It regularly achieves accuracy competitive with experiment.",
+            "providerUrl": "https://alphafold.ebi.ac.uk/",
+            "baseServiceUrl": "https://alphafold.ebi.ac.uk/api/",
+            "providerLogo": "https://alphafold.ebi.ac.uk/assets/img/dm-logo.png"
         }
     ],
     "services": [
@@ -40,19 +48,24 @@
             "accessPoint": "uniprot/"
         },
         {
-            "serviceType": "uniprot",
-            "provider": "genome3d",
-            "accessPoint": "uniprot/structures"
+            "serviceType": "summary",
+            "provider": "pdbe",
+            "accessPoint": "uniprot/summary/"
         },
         {
-            "serviceType": "uniprot",
-            "provider": "pdb",
-            "accessPoint": "uniprot/"
-        },
-        {
-            "serviceType": "uniprot",
+            "serviceType": "summary",
             "provider": "ped",
-            "accessPoint": ""
+            "accessPoint": "uniprot/summary/"
+        },
+        {
+            "serviceType": "summary",
+            "provider": "swissmodel",
+            "accessPoint": "uniprot/summary/"
+        },
+        {
+            "serviceType": "summary",
+            "provider": "alphafold",
+            "accessPoint": "uniprot/summary/"
         }
     ]
 }
