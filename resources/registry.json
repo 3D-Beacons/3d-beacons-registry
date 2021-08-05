@@ -39,6 +39,14 @@
             "providerUrl": "https://alphafold.ebi.ac.uk/",
             "baseServiceUrl": "https://alphafold.ebi.ac.uk/api/",
             "providerLogo": "https://alphafold.ebi.ac.uk/assets/img/dm-logo.png"
+        },
+        {
+            "providerId": "sasbdb",
+            "providerName": "Small Angle Scattering Biological Data Bank",
+            "providerDescription": "Small angle scattering (SAS) of X-ray and neutrons provides structural information on biological macromolecules in solution at a resolution of 1-2 nm. SASBDB is a fully searchable curated repository of freely accessible and downloadable experimental data, which are deposited together with the relevant experimental conditions, sample details, derived models and their fits to the data.",
+            "providerUrl": "https://www.sasbdb.org/",
+            "baseServiceUrl": "https://www.sasbdb.org/rest-api/",
+            "providerLogo": "https://www.sasbdb.org/media/sasbdb-logo.png"
         }
     ],
     "services": [
@@ -66,6 +74,11 @@
             "serviceType": "summary",
             "provider": "alphafold",
             "accessPoint": "uniprot/summary/"
+        },
+        {
+            "serviceType": "summary",
+            "provider": "sasbdb",
+            "accessPoint": "3dbeacon/uniprot/"
         }
     ]
 }
