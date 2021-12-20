@@ -47,6 +47,14 @@
             "providerUrl": "https://www.sasbdb.org/",
             "baseServiceUrl": "https://www.sasbdb.org/rest-api/",
             "providerLogo": "https://www.sasbdb.org/media/sasbdb-logo.png"
+        },
+        {
+            "providerId": "alphafill",
+            "providerName": "AlphaFill Model Data Bank",
+            "providerDescription": "AlphaFill is a databank of AlphaFold models enriched with ligands, cofactors, and ions that are transplanyed from homologous experimental structure models.",
+            "providerUrl": "https://alphafill.eu/",
+            "baseServiceUrl": "https://alphafill.eu/v1/aff/",
+            "providerLogo": "https://alphafill.eu/images/alphafill-logo.svg"
         }
     ],
     "services": [
@@ -79,6 +87,11 @@
             "serviceType": "summary",
             "provider": "sasbdb",
             "accessPoint": "3dbeacon/uniprot/"
+        },
+        {
+            "serviceType": "summary",
+            "provider": "alphafill",
+            "accessPoint": "3d-beacon/"
         }
     ]
 }
