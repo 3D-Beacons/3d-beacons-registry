@@ -78,21 +78,15 @@ endpoints with `/uniprot/{qualifier}.json` are relevant for you.
 After reviewing the API specifications and deciding what data you will make available, and which data schema you will
 use, the next step is to either implement the selected API endpoints in a REST API, or to take advantage of
 the [3D-Beacons Client](https://github.com/3D-Beacons/3d-beacons-client), which can be installed locally and includes a
-pre-packaged and ready-to-use implementation of certain API endpoints. For more information on this, please visit
-the [3D-Beacons Client](https://github.com/3D-Beacons/3d-beacons-client) repository.
+pre-packaged and ready-to-use implementation of certain API endpoints. For more information on this, please visit the [3D-Beacons Client](https://github.com/3D-Beacons/3d-beacons-client) repository.
 
 ### 4. Review the `resources/registry.json` file in this repository
 
-Once your metadata is exposed via API endpoints that comply with
-the [3D-Beacons API specification](https://app.swaggerhub.com/apis/3dbeacons/3D-Beacons), you should review
-the `resources/registry.json` file in this repository. This file contains all the information needed by
-the [3D-Beacons Hub API](https://github.com/3D-Beacons/3d-beacons-hub-api) for linking your API endpoints to the
-3D-Beacons Network.
+Once your metadata is exposed via API endpoints that comply with the [3D-Beacons API specification](https://app.swaggerhub.com/apis/3dbeacons/3D-Beacons), you should review the `resources/registry.json` file in this repository. This file contains all the information needed by the [3D-Beacons Hub API](https://github.com/3D-Beacons/3d-beacons-hub-api) for linking your API endpoints to the 3D-Beacons Network.
 
 The registry has two main data blocks: 1.) `providers` and 2.) `services`.
 
-The `providers` contains information that describes your data resource. We use this information to let users know where
-to look for the original sources of data.
+The `providers` contains information that describes your data resource. We use this information to let users know where to look for the original sources of data.
 
 An example item in the `providers` list would look like this:
 
@@ -103,6 +97,7 @@ An example item in the `providers` list would look like this:
    "providerDescription": "AlphaFold is an AI system developed by DeepMind that predicts a protein’s 3D structure from its amino acid sequence. It regularly achieves accuracy competitive with experiment.",
    "providerUrl": "https://alphafold.ebi.ac.uk/",
    "baseServiceUrl": "https://alphafold.ebi.ac.uk/api/",
+   "devBaseServiceUrl": "https://dev.alphafold.ebi.ac.uk/api/",
    "providerLogo": "https://alphafold.ebi.ac.uk/assets/img/dm-logo.png"
 }
 ```
@@ -119,30 +114,23 @@ An example item in the `services` list would look like this:
 },
 ```
 
-Together, the `providers` and `services` data blocks tell the 3D-Beacons Hub API that in the example above, AlphaFold DB
-provides access to their data by implementing the `summary` API endpoint, which they serve on the
-URL `https://alphafold.ebi.ac.uk/api/uniprot/summary/`
+Together, the `providers` and `services` data blocks tell the 3D-Beacons Hub API that in the example above, AlphaFold DB provides access to their data by implementing the `summary` API endpoint, which they serve on the URL `https://alphafold.ebi.ac.uk/api/uniprot/summary/`
 
 ### 5. Update the `resources/registry.json` file
 
 The next step is to fork this repository (
 i.e. [https://github.com/3D-Beacons/3d-beacons-registry](https://github.com/3D-Beacons/3d-beacons-registry)) and edit
-the `resources/registry.json` file by adding a new item in the `providers` list and listing all the API endpoints you
-implemented in the `services` list.
+the `resources/registry.json` file by adding a new item in the `providers` list and listing all the API endpoints you implemented in the `services` list. 
+
+**NOTE**: If you don't have a production setup at this point, set same value for `baseServiceUrl` as `devBaseServiceUrl`.
 
 ### 6. Create a pull request for the `development` branch
 
-Finally, please create a pull request so that we can merge you version of the `resources/registry.json` file to
-our `development` branch. We will then test the updated file, and also test all the API endpoints you specified in
-the `services` list of the `resources/registry.json` file.
+Finally, please create a pull request so that we can merge your version of the `resources/registry.json` file to our `development` branch. We will then test the updated file, and also test all the API endpoints you specified in the `services` list of the `resources/registry.json` file.
 
-As part of testing the API endpoints, we will perform stress testing of all the API endpoints you provide. We will also
-validate the data format against
-the [3D-Beacons API specification](https://app.swaggerhub.com/apis/3dbeacons/3D-Beacons), and test if
-the [3D-Beacons Hub API](https://github.com/3D-Beacons/3d-beacons-hub-api) can concatenate data.
+As part of testing the API endpoints, we will perform stress testing of all the API endpoints you provide. We will also validate the data format against the [3D-Beacons API specification](https://app.swaggerhub.com/apis/3dbeacons/3D-Beacons), and test if the [3D-Beacons Hub API](https://github.com/3D-Beacons/3d-beacons-hub-api) can concatenate data.
 
-Once done, we proceed to merge the updates into the `master` branch, at which point your data resource will become
-officially linked to the 3D-Beacons Network.
+Once done, we proceed to merge the updates into the `master` branch, at which point your data resource will become officially linked to the 3D-Beacons Network.
 
 ## Installation
 
