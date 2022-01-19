@@ -136,6 +136,11 @@ Finally, please create a pull request so that we can merge you version of the `r
 our `development` branch. We will then test the updated file, and also test all the API endpoints you specified in
 the `services` list of the `resources/registry.json` file.
 
+As part of testing the API endpoints, we will perform stress testing of all the API endpoints you provide. We will also
+validate the data format against
+the [3D-Beacons API specification](https://app.swaggerhub.com/apis/3dbeacons/3D-Beacons), and test if
+the [3D-Beacons Hub API](https://github.com/3D-Beacons/3d-beacons-hub-api) can concatenate data.
+
 Once done, we proceed to merge the updates into the `master` branch, at which point your data resource will become
 officially linked to the 3D-Beacons Network.
 
