@@ -23,6 +23,7 @@
                         "providerDescription",
                         "providerUrl",
                         "baseServiceUrl",
+                        "devBaseServiceUrl",
                         "providerLogo"
                     ],
                     "properties": {
@@ -69,6 +70,16 @@
                             "description": "A base url for the service of each provider",
                             "examples": [
                                 "https://www.ebi.ac.uk/pdbe/beacons/"
+                            ],
+                            "default": ""
+                        },
+                        "devBaseServiceUrl": {
+                            "$id": "#/properties/providers/properties/devBaseServiceUrl",
+                            "type": "string",
+                            "title": "Base service url for development environment",
+                            "description": "A base development url for the service of each provider",
+                            "examples": [
+                                "https://wwwdev.ebi.ac.uk/pdbe/beacons/"
                             ],
                             "default": ""
                         },
