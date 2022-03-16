@@ -62,6 +62,15 @@
             "baseServiceUrl": "https://alphafill.eu/v1/aff/",
             "devBaseServiceUrl": "https://alphafill.eu/v1/aff/",
             "providerLogo": "https://alphafill.eu/images/alphafill-logo.svg"
+        },
+        {
+            "providerId": "modelarchive",
+            "providerName": "ModelArchive",
+            "providerDescription": "ModelArchive is the archive for structural models which are not based on experimental data and complements the PDB archive for experimental structures and PDB-Dev for integrative structures.",
+            "providerUrl": "https://modelarchive.org",
+            "baseServiceUrl": "https://modelarchive.org/3d-beacons/",
+            "devBaseServiceUrl": "https://modelarchive.org/3d-beacons/",
+            "providerLogo": "https://modelarchive.org/app/assets/styles/logos/MA_logo.png"
         }
     ],
     "services": [
@@ -99,6 +108,11 @@
             "serviceType": "summary",
             "provider": "alphafill",
             "accessPoint": "3d-beacon/"
+        },
+        {
+            "serviceType": "summary",
+            "provider": "modelarchive",
+            "accessPoint": "uniprot/summary/"
         }
     ]
 }
