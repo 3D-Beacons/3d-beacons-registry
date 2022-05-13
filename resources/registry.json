@@ -71,6 +71,11 @@
             "accessPoint": "uniprot/"
         },
         {
+            "serviceType": "uniprot",
+            "provider": "pdbe",
+            "accessPoint": "uniprot/"
+        },
+        {
             "serviceType": "summary",
             "provider": "pdbe",
             "accessPoint": "uniprot/summary/"
