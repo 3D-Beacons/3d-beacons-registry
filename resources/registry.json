@@ -57,21 +57,30 @@
         {
             "providerId": "alphafill",
             "providerName": "AlphaFill Model Data Bank",
-            "providerDescription": "AlphaFill is a databank of AlphaFold models enriched with ligands, cofactors, and ions that are transplanyed from homologous experimental structure models.",
+            "providerDescription": "AlphaFill is a databank of AlphaFold models enriched with ligands, cofactors, and ions that are transplanted from homologous experimental structure models.",
             "providerUrl": "https://alphafill.eu/",
             "baseServiceUrl": "https://alphafill.eu/v1/aff/",
             "devBaseServiceUrl": "https://alphafill.eu/v1/aff/",
             "providerLogo": "https://alphafill.eu/images/alphafill-logo.svg"
         },
-	{
+        {
             "providerId": "hegelab",
             "providerName": "hegelab.org",
             "providerDescription": "Membrane Protein Research Group, Department of Biophysics and Radiation Biology, Semmelweis University, Budapest, Hungary",
             "providerUrl": "http://www.hegelab.org/",
-	    "baseServiceUrl": "https://3dbeacon.hegelab.org/",
+            "baseServiceUrl": "https://3dbeacon.hegelab.org/",
             "devBaseServiceUrl": "https://dev.3dbeacon.hegelab.org/",
             "providerLogo": "http://www.hegelab.org/images/logo.png"
-	}
+        },
+        {
+            "providerId": "modelarchive",
+            "providerName": "ModelArchive",
+            "providerDescription": "ModelArchive is the archive for structural models which are not based on experimental data and complements the PDB archive for experimental structures and PDB-Dev for integrative structures.",
+            "providerUrl": "https://modelarchive.org",
+            "baseServiceUrl": "https://modelarchive.org/3d-beacons/",
+            "devBaseServiceUrl": "https://modelarchive.org/3d-beacons/",
+            "providerLogo": "https://modelarchive.org/app/assets/styles/logos/MA_logo.png"
+        }
     ],
     "services": [
         {
@@ -114,10 +123,16 @@
             "provider": "alphafill",
             "accessPoint": "3d-beacon/"
         },
-	{
+
+	      {
             "serviceType": "summary",
             "provider": "hegelab",
             "accessPoint": "uniprot/summary/"
-	}
+	      },
+        {
+            "serviceType": "summary",
+            "provider": "modelarchive",
+            "accessPoint": "uniprot/summary/"
+        }
     ]
 }
