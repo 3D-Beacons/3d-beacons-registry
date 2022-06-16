@@ -57,7 +57,7 @@
         {
             "providerId": "alphafill",
             "providerName": "AlphaFill Model Data Bank",
-            "providerDescription": "AlphaFill is a databank of AlphaFold models enriched with ligands, cofactors, and ions that are transplanyed from homologous experimental structure models.",
+            "providerDescription": "AlphaFill is a databank of AlphaFold models enriched with ligands, cofactors, and ions that are transplanted from homologous experimental structure models.",
             "providerUrl": "https://alphafill.eu/",
             "baseServiceUrl": "https://alphafill.eu/v1/aff/",
             "devBaseServiceUrl": "https://alphafill.eu/v1/aff/",
