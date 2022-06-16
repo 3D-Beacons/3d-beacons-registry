@@ -62,7 +62,7 @@
             "baseServiceUrl": "https://alphafill.eu/v1/aff/",
             "devBaseServiceUrl": "https://alphafill.eu/v1/aff/",
             "providerLogo": "https://alphafill.eu/images/alphafill-logo.svg"
-        }
+        },
 	{
             "providerId": "hegelab",
             "providerName": "hegelab.org",
