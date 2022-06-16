@@ -64,6 +64,15 @@
             "providerLogo": "https://alphafill.eu/images/alphafill-logo.svg"
         },
         {
+            "providerId": "hegelab",
+            "providerName": "hegelab.org",
+            "providerDescription": "Membrane Protein Research Group, Department of Biophysics and Radiation Biology, Semmelweis University, Budapest, Hungary",
+            "providerUrl": "http://www.hegelab.org/",
+            "baseServiceUrl": "https://3dbeacon.hegelab.org/",
+            "devBaseServiceUrl": "https://dev.3dbeacon.hegelab.org/",
+            "providerLogo": "http://www.hegelab.org/images/logo.png"
+        },
+        {
             "providerId": "modelarchive",
             "providerName": "ModelArchive",
             "providerDescription": "ModelArchive is the archive for structural models which are not based on experimental data and complements the PDB archive for experimental structures and PDB-Dev for integrative structures.",
@@ -114,6 +123,12 @@
             "provider": "alphafill",
             "accessPoint": "3d-beacon/"
         },
+
+	      {
+            "serviceType": "summary",
+            "provider": "hegelab",
+            "accessPoint": "uniprot/summary/"
+	      },
         {
             "serviceType": "summary",
             "provider": "modelarchive",
