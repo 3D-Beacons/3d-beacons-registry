@@ -80,6 +80,15 @@
             "baseServiceUrl": "https://modelarchive.org/3d-beacons/",
             "devBaseServiceUrl": "https://modelarchive.org/3d-beacons/",
             "providerLogo": "https://modelarchive.org/app/assets/styles/logos/MA_logo.png"
+        },
+		{
+            "providerId": "isoformio",
+            "providerName": "isoform.io",
+            "providerDescription": "isoform.io provides open access to predicted 3D structures of protein isoforms derived from the human transcriptome.",
+            "providerUrl": "https://isoform.io/",
+            "baseServiceUrl": "https://storage.googleapis.com/isoform.io/",
+            "devBaseServiceUrl": "https://storage.googleapis.com/isoform.io/",
+            "providerLogo": "https://storage.googleapis.com/isoform.io/ccbtext_wbg.png"
         }
     ],
     "services": [
@@ -133,6 +142,11 @@
             "serviceType": "summary",
             "provider": "modelarchive",
             "accessPoint": "uniprot/summary/"
+        },
+		{
+            "serviceType": "summary",
+            "provider": "isoformio",
+            "accessPoint": "uniprot/"
         }
     ]
 }
