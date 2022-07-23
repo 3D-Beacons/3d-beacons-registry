@@ -21,6 +21,7 @@ the data from the Beacons and expose it via Hub API endpoints.
 - [AlphaFold](https://alphafold.ebi.ac.uk)
 - [AlphaFill](https://alphafill.eu/)
 - [Genome3D](http://genome3d.eu/)
+- [isoform.io](https://www.isoform.io/)
 - [Protein Data Bank in Europe](https://pdbe.org)
 - [Protein Data Bank in Europe - Knowledge Base](https://pdbe-kb.org)
 - [Protein Ensemble Database](https://proteinensemble.org/)
