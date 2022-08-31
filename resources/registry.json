@@ -6,7 +6,7 @@
             "providerDescription": "SWISS-MODEL is a fully automated protein structure homology-modelling server, accessible via the ExPASy web server, or from the program DeepView (Swiss Pdb-Viewer). The purpose of this server is to make protein modelling accessible to all life science researchers worldwide.",
             "providerUrl": "https://swissmodel.expasy.org/",
             "baseServiceUrl": "https://swissmodel.expasy.org/3d-beacons/",
-            "devBaseServiceUrl": "https://swissmodel.expasy.org/3d-beacons/",
+            "devBaseServiceUrl": "https://swissmodel.expasy.org/3d-beacons/dev/",
             "providerLogo": "https://swissmodel.expasy.org"
         },
         {
@@ -78,7 +78,7 @@
             "providerDescription": "ModelArchive is the archive for structural models which are not based on experimental data and complements the PDB archive for experimental structures and PDB-Dev for integrative structures.",
             "providerUrl": "https://modelarchive.org",
             "baseServiceUrl": "https://modelarchive.org/3d-beacons/",
-            "devBaseServiceUrl": "https://modelarchive.org/3d-beacons/",
+            "devBaseServiceUrl": "https://modelarchive.org/3d-beacons/dev/",
             "providerLogo": "https://modelarchive.org/app/assets/styles/logos/MA_logo.png"
         },
 		{
