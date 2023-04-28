@@ -147,6 +147,11 @@
             "serviceType": "summary",
             "provider": "isoformio",
             "accessPoint": "uniprot/"
+        },
+        {
+            "serviceType": "annotations",
+            "provider": "pdbe",
+            "accessPoint": "annotations/"
         }
     ]
 }
