@@ -32,8 +32,8 @@
             "providerName": "Protein Ensemble Database",
             "providerDescription": "The Protein Ensemble Database (PED) is an open access database for the deposition of structural ensembles, mainly intrinsically disordered proteins (IDPs).",
             "providerUrl": "https://proteinensemble.org/",
-            "baseServiceUrl": "https://proteinensemble.org/api/3d-beacons/",
-            "devBaseServiceUrl": "https://proteinensemble.org/api/3d-beacons/",
+            "baseServiceUrl": "https://deposition.proteinensemble.org/api/v1/3d-beacons/",
+            "devBaseServiceUrl": "https://deposition.proteinensemble.org/api/v1/3d-beacons/",
             "providerLogo": "https://proteinensemble.org/assets/PED_logo.svg"
         },
         {
