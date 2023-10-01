@@ -89,6 +89,15 @@
             "baseServiceUrl": "https://storage.googleapis.com/isoform.io/",
             "devBaseServiceUrl": "https://storage.googleapis.com/isoform.io/",
             "providerLogo": "https://storage.googleapis.com/isoform.io/ccbtext_wbg.png"
+        },
+        {
+            "providerId": "levylab",
+            "providerName": "LevyLab",
+            "providerDescription": "Dataset of validated homomeric AlphaFold models",
+            "providerUrl": "https://shmoo.weizmann.ac.il",
+            "baseServiceUrl": "https://shmoo.weizmann.ac.il/elevy/HomAtlas",
+            "devBaseServiceUrl": "https://shmoo.weizmann.ac.il/elevy/HomAtlas",
+            "providerLogo": "https://shmoo.weizmann.ac.il/elevy/elevylab_logo.jpg"
         }
     ],
     "services": [
@@ -152,6 +161,11 @@
             "serviceType": "annotations",
             "provider": "pdbe",
             "accessPoint": "annotations/"
+        },
+        {
+            "serviceType": "summary",
+            "provider": "levylab",
+            "accessPoint": "/"
         }
     ]
 }
