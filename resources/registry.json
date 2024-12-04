@@ -98,6 +98,15 @@
             "baseServiceUrl": "https://shmoo.weizmann.ac.il/elevy/HomAtlas",
             "devBaseServiceUrl": "https://shmoo.weizmann.ac.il/elevy/HomAtlas",
             "providerLogo": "https://shmoo.weizmann.ac.il/elevy/elevylab_logo.jpg"
+        },
+        {
+            "providerId": "bfvd",
+            "providerName": "BFVD",
+            "providerDescription": "BFVD is a large repository of predicted viral protein structures",
+            "providerUrl": "https://bfvd.foldseek.com/",
+            "baseServiceUrl": "https://bfvd.steineggerlab.workers.dev",
+            "devBaseServiceUrl": "https://bfvd.steineggerlab.workers.dev",
+            "providerLogo": "https://raw.githubusercontent.com/sokrypton/ColabFold/main/.github/ColabFold_Marv_Logo.png"
         }
     ],
     "services": [
@@ -166,6 +175,11 @@
             "serviceType": "summary",
             "provider": "levylab",
             "accessPoint": "/"
+        },
+        {
+            "serviceType": "summary",
+            "provider": "bfvd",
+            "accessPoint": "json/"
         }
     ]
 }
