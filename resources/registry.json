@@ -118,12 +118,12 @@
         {
             "serviceType": "uniprot",
             "provider": "pdbe",
-            "accessPoint": "uniprot/"
+            "accessPoint": "beacons/uniprot/"
         },
         {
             "serviceType": "summary",
             "provider": "pdbe",
-            "accessPoint": "uniprot/summary/"
+            "accessPoint": "beacons/uniprot/summary/"
         },
         {
             "serviceType": "summary",
@@ -169,7 +169,7 @@
         {
             "serviceType": "annotations",
             "provider": "pdbe",
-            "accessPoint": "annotations/"
+            "accessPoint": "beacons/annotations/"
         },
         {
             "serviceType": "summary",
