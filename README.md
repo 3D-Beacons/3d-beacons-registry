@@ -21,18 +21,6 @@ the various Beacons. The Beacons provide data according to the 3D-Beacons data
 specifications ([GitHub link](https://github.com/3D-Beacons/3d-beacons-specifications/blob/production/oas3.yaml)). The Hub collates
 the data from the Beacons and expose it via Hub API endpoints.
 
-### Current 3D-Beacons
-
-- [AlphaFold](https://alphafold.ebi.ac.uk)
-- [AlphaFill](https://alphafill.eu/)
-- [BFVD](https://bfvd.foldseek.com/)
-- [Genome3D](http://genome3d.eu/)
-- [isoform.io](https://www.isoform.io/)
-- [Protein Data Bank in Europe](https://pdbe.org)
-- [Protein Data Bank in Europe - Knowledge Base](https://pdbe-kb.org)
-- [Protein Ensemble Database](https://proteinensemble.org/)
-- [SWISS-MODEL](https://swissmodel.expasy.org/)
-
 ## About the 3D-Beacons Registry
 
 The 3D-Beacons Registry records meta-information about all the contributing partner resources, and lists the API
