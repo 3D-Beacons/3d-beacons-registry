@@ -190,6 +190,11 @@
             "serviceType": "sequence",
             "provider": "swissmodel",
             "accessPoint": "sequence/summary/"
+        },
+        {
+            "serviceType": "sequence",
+            "provider": "modelarchive",
+            "accessPoint": "sequence/summary/"
         }
     ]
 }
