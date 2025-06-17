@@ -23,8 +23,8 @@
             "providerName": "Protein Data Bank in Europe",
             "providerDescription": "PDBe is the European resource for the collection, organisation and dissemination of data on biological macromolecular structures.",
             "providerUrl": "https://www.ebi.ac.uk/pdbe/",
-            "baseServiceUrl": "https://www.ebi.ac.uk/pdbe/aggregated-api/beacons/",
-            "devBaseServiceUrl": "https://wwwdev.ebi.ac.uk/pdbe/aggregated-api/beacons/",
+            "baseServiceUrl": "https://www.ebi.ac.uk/pdbe/api/v2/",
+            "devBaseServiceUrl": "https://wwwdev.ebi.ac.uk/pdbe/api/v2/",
             "providerLogo": "https://www.ebi.ac.uk/pdbe/static/images/logos/PDBe/logo.png"
         },
         {
@@ -98,6 +98,15 @@
             "baseServiceUrl": "https://shmoo.weizmann.ac.il/elevy/HomAtlas",
             "devBaseServiceUrl": "https://shmoo.weizmann.ac.il/elevy/HomAtlas",
             "providerLogo": "https://shmoo.weizmann.ac.il/elevy/elevylab_logo.jpg"
+        },
+        {
+            "providerId": "bfvd",
+            "providerName": "BFVD",
+            "providerDescription": "BFVD is a large repository of predicted viral protein structures",
+            "providerUrl": "https://bfvd.foldseek.com/",
+            "baseServiceUrl": "https://bfvd.steineggerlab.workers.dev",
+            "devBaseServiceUrl": "https://bfvd.steineggerlab.workers.dev",
+            "providerLogo": "https://raw.githubusercontent.com/sokrypton/ColabFold/main/.github/ColabFold_Marv_Logo.png"
         }
     ],
     "services": [
@@ -166,6 +175,21 @@
             "serviceType": "summary",
             "provider": "levylab",
             "accessPoint": "/"
+        },
+        {
+            "serviceType": "health",
+            "provider": "pdbe",
+            "accessPoint": "health"
+        },
+        {
+            "serviceType": "health",
+            "provider": "swissmodel",
+            "accessPoint": "health/"
+        },
+        {
+            "serviceType": "sequence",
+            "provider": "swissmodel",
+            "accessPoint": "sequence/summary/"
         }
     ]
 }
