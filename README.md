@@ -18,7 +18,7 @@ format and on a unified platform.
 3D-Beacons consists of a Registry, a Hub and Beacons who host Clients. The Registry is used by
 the [3D-Beacons Hub](https://github.com/3D-Beacons/3d-beacons-hub-api) to look up which API endpoints are supported by
 the various Beacons. The Beacons provide data according to the 3D-Beacons data
-specifications ([GitHub link](https://github.com/3D-Beacons/3d-beacons-specifications/blob/production/oas3.yaml)). The Hub collates
+specifications ([GitHub link](https://github.com/3D-Beacons/3d-beacons-specifications/blob/main/oas3.yaml)). The Hub collates
 the data from the Beacons and expose it via Hub API endpoints.
 
 ## About the 3D-Beacons Registry
@@ -42,7 +42,7 @@ Data providers who are interested in making their macromolecule structures avail
 should follow the following steps:
 
 1. Contact the 3D-Beacons consortium
-2. Review the [API specifications](https://github.com/3D-Beacons/3d-beacons-specifications/blob/production/oas3.yaml) for sharing metadata
+2. Review the [API specifications](https://github.com/3D-Beacons/3d-beacons-specifications/blob/main/oas3.yaml) for sharing metadata
 3. Implement API endpoints or set up an instance of
    the [3D-Beacons Client](https://github.com/3D-Beacons/3d-beacons-client)
 4. Review the `resources/registry.json` file in this repository
@@ -58,11 +58,11 @@ To ensure that the network provides access to relevant data, we require new pros
 before linking their data to 3D-Beacons. Please send an email to Sameer Velankar (sameer@ebi.ac.uk) or Christine
 Orengo (c.orengo@ucl.ac.uk) to initiate discussions.
 
-### 2. Review the [API specifications](https://github.com/3D-Beacons/3d-beacons-specifications/blob/production/oas3.yaml) for sharing metadata
+### 2. Review the [API specifications](https://github.com/3D-Beacons/3d-beacons-specifications/blob/main/oas3.yaml) for sharing metadata
 
 The 3D-Beacons Network provides access to metadata regarding macromolecule structures in a unified format. This means
 that every data provider has to expose information in the same data format. We define the accepted data schemas in the
-[3D-Beacons API specification](https://github.com/3D-Beacons/3d-beacons-specifications/blob/production/oas3.yaml) on GitHub.
+[3D-Beacons API specification](https://github.com/3D-Beacons/3d-beacons-specifications/blob/main/oas3.yaml) on GitHub.
 
 Please review this specification, and identify the schemas that fit the data you would like to make accessible via
 3D-Beacons. For example, if you want to make your structures discoverable based on a UniProt identifier, then the
@@ -77,7 +77,7 @@ pre-packaged and ready-to-use implementation of certain API endpoints. For more 
 
 ### 4. Review the `resources/registry.json` file in this repository
 
-Once your metadata is exposed via API endpoints that comply with the [3D-Beacons API specification](https://github.com/3D-Beacons/3d-beacons-specifications/blob/production/oas3.yaml), you should review the `resources/registry.json` file in this repository. This file contains all the information needed by the [3D-Beacons Hub API](https://github.com/3D-Beacons/3d-beacons-hub-api) for linking your API endpoints to the 3D-Beacons Network.
+Once your metadata is exposed via API endpoints that comply with the [3D-Beacons API specification](https://github.com/3D-Beacons/3d-beacons-specifications/blob/main/oas3.yaml), you should review the `resources/registry.json` file in this repository. This file contains all the information needed by the [3D-Beacons Hub API](https://github.com/3D-Beacons/3d-beacons-hub-api) for linking your API endpoints to the 3D-Beacons Network.
 
 The registry has two main data blocks: 1.) `providers` and 2.) `services`.
 
@@ -123,7 +123,7 @@ the `resources/registry.json` file by adding a new item in the `providers` list 
 
 Finally, please create a pull request so that we can merge your version of the `resources/registry.json` file to our `development` branch. We will then test the updated file, and also test all the API endpoints you specified in the `services` list of the `resources/registry.json` file.
 
-As part of testing the API endpoints, we will perform stress testing of all the API endpoints you provide. We will also validate the data format against the [3D-Beacons API specification](https://github.com/3D-Beacons/3d-beacons-specifications/blob/production/oas3.yaml), and test if the [3D-Beacons Hub API](https://github.com/3D-Beacons/3d-beacons-hub-api) can concatenate data.
+As part of testing the API endpoints, we will perform stress testing of all the API endpoints you provide. We will also validate the data format against the [3D-Beacons API specification](https://github.com/3D-Beacons/3d-beacons-specifications/blob/main/oas3.yaml), and test if the [3D-Beacons Hub API](https://github.com/3D-Beacons/3d-beacons-hub-api) can concatenate data.
 
 Once done, we proceed to merge the updates into the `master` branch, at which point your data resource will become officially linked to the 3D-Beacons Network.
 
