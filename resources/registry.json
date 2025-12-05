@@ -200,6 +200,11 @@
             "serviceType": "annotations",
             "provider": "alphafold",
             "accessPoint": "annotations/"
+        },
+        {
+            "serviceType": "sequence",
+            "provider": "alphafold",
+            "accessPoint": "sequence/summary"
         }
     ]
 }
