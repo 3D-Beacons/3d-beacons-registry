@@ -107,6 +107,15 @@
             "baseServiceUrl": "https://bfvd.steineggerlab.workers.dev",
             "devBaseServiceUrl": "https://bfvd.steineggerlab.workers.dev",
             "providerLogo": "https://raw.githubusercontent.com/sokrypton/ColabFold/main/.github/ColabFold_Marv_Logo.png"
+        },
+        {
+            "providerId": "bindome",
+            "providerName": "Bindome",
+            "providerDescription": "Database of de novo protein binders",
+            "providerUrl": "https://bindome.epfl.ch/",
+            "baseServiceUrl": "https://bindome.epfl.ch/",
+            "devBaseServiceUrl": "https://bindome.epfl.ch/",
+            "providerLogo": ""
         }
     ],
     "services": [
@@ -205,6 +214,11 @@
             "serviceType": "sequence",
             "provider": "alphafold",
             "accessPoint": "sequence/summary"
+        },
+        {
+            "serviceType": "summary",
+            "provider": "bindome",
+            "accessPoint": "uniprot/summary/"
         }
     ]
 }
