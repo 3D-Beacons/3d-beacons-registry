@@ -94,10 +94,10 @@
             "providerId": "levylab",
             "providerName": "LevyLab",
             "providerDescription": "Dataset of validated homomeric AlphaFold models",
-            "providerUrl": "https://shmoo.weizmann.ac.il",
-            "baseServiceUrl": "https://shmoo.weizmann.ac.il/elevy/HomAtlas",
-            "devBaseServiceUrl": "https://shmoo.weizmann.ac.il/elevy/HomAtlas",
-            "providerLogo": "https://shmoo.weizmann.ac.il/elevy/elevylab_logo.jpg"
+            "providerUrl": "https://levy.mocel.unige.ch",
+            "baseServiceUrl": "https://levy.mocel.unige.ch/hom_atlas/",
+            "devBaseServiceUrl": "https://levy.mocel.unige.ch/hom_atlas/",
+            "providerLogo": "https://levy.mocel.unige.ch/elevylab_logo.jpg"
         },
         {
             "providerId": "bfvd",
