@@ -214,11 +214,6 @@
             "serviceType": "sequence",
             "provider": "alphafold",
             "accessPoint": "sequence/summary"
-        },
-        {
-            "serviceType": "summary",
-            "provider": "bindome",
-            "accessPoint": "uniprot/summary/"
         }
     ]
 }
